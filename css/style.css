@@ -1,0 +1,28 @@
+/* .watch-text-box {
+  max-width: 768px;
+} */
+.watch-text,
+.sync-text {
+  font-size: 16px;
+  line-height: 32px;
+  width: 703px;
+  letter-spacing: -3%;
+  height: 72px;
+  padding: 0 15px;
+}
+
+.mockup {
+  padding-top: 20px;
+  height: 396px;
+  width: 495px;
+}
+
+.watch-box {
+  height: 396px;
+  width: 495px;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
