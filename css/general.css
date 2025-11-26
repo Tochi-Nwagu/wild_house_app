@@ -1,3 +1,75 @@
+/* FEATURE SECTION STYLE*/
+.feat{
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0% auto;
+    top: 848.41px;
+    background: #0d0f2a;
+}
+
+.host {
+    padding-top: 5px;
+    height: 50px;
+    top: 848.41px;
+    left: 80px;
+    margin-bottom: 0%;
+    opacity: 1;
+}
+   
+/*Logos styles*/
+.logos{ 
+    display: flex;
+    height: 94px;
+    top: 914.41px;
+    opacity: 1;
+    margin-bottom: 3px;
+    justify-content: space-between;   
+}
+
+.netflix{
+    height: 40px;
+    top: 25px;
+    opacity: 1;
+    margin: 18px;
+}
+
+.youtube{
+    width: 200px;
+    height: 50px;
+    top: 27px;
+    left: 248px;
+    opacity: 1;
+    margin: 20px;
+}
+
+.disney{
+    width: 130px;
+    height: 93px;
+    left: 560px;
+    opacity: 1;
+    border-radius: 28.92px;
+}
+
+.hbo{
+    width: 95px;
+    height: 60px;
+    opacity: 1;
+    margin: 15px;
+}
+
+.spotify{
+    width: 180px;
+    height: 40px;
+    margin: 20px;
+    top: 27px;
+    left: 953px;
+    opacity: 1;
+    gap: 16px;
+}
+
+/*END OF FEATURE SECTION STYLING*/
 * {
   margin: 0;
   padding: 0;
