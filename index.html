@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+
     <title>Wild House</title>
   </head>
   <body>
@@ -70,14 +72,20 @@
           fill="#1ED760"
         />
       </svg>
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li><a href="#" class="navlink"> Features</a></li>
-          <li><a href="#" class="navlink">How It Works</a></li>
-          <li><a href="#" class="navlink">Support</a></li>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-navlink"> Features</a></li>
+          <li><a href="#how-to" class="main-navlink">How It Works</a></li>
+          <li><a href="#" class="main-navlink">Support</a></li>
         </ul>
+        <a class="nav-cta" href="#cta">Install wild House</a>
       </nav>
-      <button class="cta" type="button">Install Wild House</button>
+
+      <!-- mobile menu -->
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <!-- Main Content -->
     <main>
@@ -100,7 +108,7 @@
     </section>
       <!-- Section watch -->
       <section id="watch">
-        <div class="grid-col-2 container">
+        <div class="grid2 grid-col-2 container">
           <div class="watch-text-box">
             <button class="btn-tag" type="button">
               The Ultimate social upgrade
@@ -187,7 +195,11 @@
             </p>
           </div>
           <div class="mockup">
-            <img src="./image/mockup.png" alt="" />
+            <img
+              class="sync-img"
+              src="./image/mockup.png"
+              alt="device mockup images"
+            />
           </div>
         </div>
       </section>
@@ -196,6 +208,15 @@
     </main>
     <!-- Footer -->
     <footer></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
