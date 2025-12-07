@@ -116,10 +116,9 @@
   position: relative;
   overflow: hidden;
 }
-
 /* Watermark */
 #watch::before {
-  content: '';
+  content: ' ';
   background-image: url('../image/watermark.png');
   background-repeat: no-repeat;
   background-size: cover;
