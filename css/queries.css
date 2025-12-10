@@ -34,7 +34,11 @@
     width: 100%;
     padding-bottom: 20px;
   }
-
+  .hero-left,
+  .hero-right {
+    width: 50%;
+    padding: 40px 0;
+  }
   .container {
     height: auto;
     margin: 0 auto;
@@ -58,7 +62,8 @@
   }
 
   .watch-text,
-  .sync-text {
+  .sync-text,
+  .how-text {
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: 400;
@@ -71,7 +76,12 @@
     width: 100%;
     padding-bottom: 70px;
   }
-
+  .cta {
+    width: 98%;
+  }
+  .cta-intro {
+    font-size: 28px;
+  }
   .mockup {
     padding-left: 60px;
     padding-top: 40px;
@@ -79,6 +89,20 @@
   .sync-img {
     width: 100%;
     height: auto;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  ,
+  .copyright {
+    margin-top: 0;
+  }
+  .social-icon {
+    width: 16px;
+    height: 16px;
+    gap: 10px;
   }
   /* .nav-cta {
     margin-top: 450px;
@@ -97,6 +121,29 @@
     padding-left: 20px;
   }
 
+  .hero {
+    flex-direction: column-reverse;
+    padding: 0;
+    width: 100%;
+  }
+
+  .hero-left {
+    display: flex;
+    gap: 12px;
+  }
+
+  .video-wrapper {
+    flex: 2;
+    height: 260px;
+  }
+
+  .party-panel {
+    flex: 1;
+    height: 260px;
+  }
+  .feat {
+    width: 75%;
+  }
   .mockup {
     padding-left: 20px;
   }
@@ -172,19 +219,40 @@
     height: 40px;
   }
 
-  .watch-text-box,
-  .sync-text {
+  .watch-text,
+  .sync-text,
+  .how-text {
     font-size: 24px;
   }
 
   .watch-box,
-  .sync-box {
+  .sync-box,
+  .how {
     margin-bottom: 80px;
   }
 
   .subheading {
     font-size: 40px;
     margin-bottom: 20px;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col {
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 32px;
+  }
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+  }
+  .copyright {
+    font-size: 14px;
   }
 }
 /* mobile device 544px */
@@ -194,21 +262,39 @@
     line-height: 1.2;
     width: 100%;
   }
-
-  .watch-box {
-    height: 200px;
+  .hero-left {
+    flex-direction: column;
   }
 
+  .video-wrapper,
+  .party-panel {
+    width: 100%;
+    height: auto;
+  }
+
+  .party-panel {
+    min-height: 320px;
+  }
   .mockup {
     padding-left: 0;
   }
   .watch-text,
-  .sync-text {
+  .sync-text,
+  .how-text {
     font-size: 14px;
   }
 
   .main-navlink:link,
   .main-navlink:visited {
     font-size: 24px;
+  }
+  .cta-btn-group {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }

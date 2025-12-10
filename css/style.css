@@ -1,35 +1,25 @@
-/* ---------- GLOBAL RESET ---------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-
-body {
-  background: #0b0f29; /* Deep navy */
-  color: #fff;
-}
-
 /* ---------- HERO WRAPPER ---------- */
 .hero {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   padding: 60px 80px;
-  gap: 40px;
+  gap: 20px;
+  width: 100%;
 }
 
 /* ---------- LEFT: VIDEO + PARTY PANEL ---------- */
 .hero-left {
   display: flex;
+  width: 100%;
   gap: 20px;
 }
 
 /* -------- VIDEO AREA -------- */
 .video-wrapper {
   position: relative;
-  width: 650px;
+  width: 100%;
   height: 380px;
   border-radius: 16px;
   overflow: hidden;
@@ -103,7 +93,7 @@ body {
 
 /* ---------- PARTY PANEL ---------- */
 .party-panel {
-  width: 300px;
+  width: 100%;
   background: #0f153b;
   border-radius: 16px;
   padding: 24px;
@@ -111,7 +101,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 380px;
-  background-image: url("overlay-bg.svg"); /* optional BG text */
+  background-image: url('overlay-bg.svg'); /* optional BG text */
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
@@ -180,7 +170,7 @@ body {
 
 /* ---------- RIGHT SIDE CONTENT ---------- */
 .hero-right {
-  max-width: 450px;
+  width: 100%;
 }
 
 .description-tag {
@@ -337,25 +327,27 @@ body {
   margin-top: 9.6rem;
 }
 /* Make the section able to hold an absolutely positioned child */
-#watch {
+#watch,
+#how-to {
   position: relative;
   overflow: hidden;
 }
 /* Watermark */
-#watch::before {
+#watch::before,
+#how-to::before {
   content: ' ';
   background-image: url('../image/watermark.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
 
-  transform: translate(-50%, -50%) rotate(-5deg);
+  transform: translate(-40%, -50%) rotate(-5deg);
 
   width: 90%;
-  height: 70%;
+  height: 100%;
 
   opacity: 0.1;
   z-index: 0; /* behind content */
@@ -372,14 +364,123 @@ body {
   justify-content: space-between;
   gap: 300px;
 }
+
+.cta-intro {
+  font-size: 40px;
+  font-weight: 900;
+  color: #1ed760;
+  padding-left: 30px;
+}
+
+.intro-text,
+.text2 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -3%;
+  padding-bottom: 30px;
+}
+
+.span-text {
+  color: #1ed760;
+}
+
+#cta {
+  margin-top: 80px;
+}
+.cta {
+  background-color: rgba(30, 215, 96, 0.1);
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  padding: 50px 80px;
+  border-radius: 8px;
+}
+.cta-btn-group {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 40px;
+}
+.cta-btn-primary,
+.cta-btn-secondary {
+  background-color: #1ed760;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+}
+
+.cta-btn-secondary {
+  background-color: rgba(30, 215, 96, 0.1);
+  border: 1px solid #1ed760;
+  border-radius: 8px;
+}
 /* sticky header */
-/* .header .sticky {
+.sticky .header {
   position: fixed;
   top: 0;
-  left: 0;
+  bottom: 0;
   width: 100%;
   height: 128px;
   padding-top: 0;
   padding-bottom: 0;
   z-index: 999;
+}
+
+/* FOOTER */
+.footer {
+  padding: 0;
+  width: 90%;
+  margin: 100px auto;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1fr 1fr 2fr;
+}
+
+/* .logo-col {
+  display: flex;
+  flex-direction: column;
 } */
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.social-icon {
+  height: 24px;
+  width: 24px;
+  margin-top: 20px;
+}
+
+.copyright {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: 100px;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 16px;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
