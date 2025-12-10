@@ -1,29 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <title>Wild House</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header></header>
-    <!-- Main Content -->
-    <main>
-      <!-- Section Hero -->
-      <section id="hero-section"></section>
-      <!-- Section watch -->
-      <section id="watch"></section>
-      <!-- section sync -->
-      <section id="sync"></section>
-      <!-- section how-to -->
-      <section id="how-to"></section>
-    </main>
-    <!-- Footer -->
-    <footer></footer>
-    <script src="js/script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild House UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0f2e;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: #0d1238;
+      padding: 30px 20px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .menu {
+      margin-top: 40px;
+    }
+    .menu a {
+      display: block;
+      color: #8da0ff;
+      margin-bottom: 18px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 250px;
+      padding: 20px 40px;
+    }
+
+    /* Search bar */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #11183f;
+      padding: 10px 20px;
+      border-radius: 40px;
+      width: 60%;
+    }
+    .search-bar input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+    }
+
+    /* Banner */
+    .banner {
+      margin-top: 30px;
+      width: 100%;
+      height: 260px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Section titles */
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    /* Movie rows */
+    .movie-row {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+    .movie {
+      width: 200px;
+      height: 120px;
+      border-radius: 12px;
+      background-size: cover;
+      background-position: center;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding: 40px 0;
+      background: #0d1238;
+      text-align: center;
+    }
+    footer a {
+      color: #8da0ff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    /* WATERMARK PLACE */
+    /* Add watermark text inside the body background */
+    /* Example: */
+    /* body::after {
+         content: "WILD HOUSE";
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%) rotate(-25deg);
+         font-size: 120px;
+         color: rgba(255, 255, 255, 0.04);
+         pointer-events: none;
+       }
+    */
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">WILD HOUSE</div>
+    <div class="menu">
+      <a href="#">Browse</a>
+      <a href="#">Wishlist</a>
+      <a href="#">Coming Soon</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <div class="banner" style="background-image: url('/img/banner\ prodigal\ son.png');"></div>
+
+    <h2>Popcorn Mania</h2>
+    <div class="movie-row">
+      <div class="movie" style="background-image: url('/img/Spiderman.png');"></div>
+      <div class="movie" style="background-image: url('/img/john\ wick.png');"></div>
+      <div class="movie" style="background-image: url('/img/F1.png');"></div>
+    </div>
+
+    <h2>Continue Watching</h2>
+    <div class="movie-row">
+      <div class="movie" style="background-image: url('c1.jpg');"></div>
+      <div class="movie" style="background-image: url('c2.jpg');"></div>
+      <div class="movie" style="background-image: url('c3.jpg');"></div>
+    </div>
+
+    <footer>
+      <div>© 2025 Wild House Streaming</div>
+      <div>
+        <a href="#">Help</a> ·
+        <a href="#">Privacy</a> ·
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
