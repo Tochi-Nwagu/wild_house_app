@@ -3,46 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/signup.css" />
+
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
     <title>Login Form</title>
   </head>
   <body>
     <!-- login mobile -->
-     <header class="login-top">
-      <img src="media/Base.png" alt="phone header">
-     </header>
+    <header class="login-top">
+      <img src="media/Base.png" alt="phone header" />
+    </header>
 
-     <div class="login-logo">
-      <img src="media/Component 26.png" alt="wildhouse logo">
-     </div>
+    <div class="login-logo">
+      <img src="media/Component 26.png" alt="wildhouse logo" />
+    </div>
 
-     <div class="login-header">
-      <h1>Login</h1>
-     </div>
+    <div class="login-header">
+      <h2 class="subheading">Login</h2>
+    </div>
 
-     <section class="login-form">
-      <form action="">
-        <label for="email">Email Address <span class="required"></span></label>
-        <input type="text" value="    Enter Email Address" required>
-        <label for="password">Password <span class="required"></span></label>
-        <input type="text" value="    Enter Password" required>
-        <a href="signup.html"><p>Forgot Password</p></a>
+    <!-- Login Form -->
+    <section class="login-form">
+      <form action="index.html" method="post">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Email Address"
+          required
+        />
+
+        <label for="password">Password <span class="required">*</span></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+          required
+        />
+
+        <a href="forgot-password.html" class="forgot-password"
+          >Forgot Password?</a
+        >
+
+        <input type="submit" value="Login" class="login-submit-btn" />
       </form>
-     </section>
+    </section>
 
-     <div class="login-submit">
-      <form action="index.html">
-        <input type="submit" value="Login">
-      </form>
-     </div>
-     
-     <div class="login-account">
+    <!-- Sign Up Link -->
+    <div class="login-account">
       <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-     </div>
+    </div>
 
-
-     <img src="media/Light.png" alt="base img" class="login-baseimg">
+    <img src="media/Light.png" alt="base img" class="login-baseimg" />
+    <script src="js/login.js"></script>
   </body>
 </html>
