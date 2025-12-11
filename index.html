@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wild House UI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild House UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--   <style>
     body {
       margin: 0;
       padding: 0;
@@ -134,47 +138,337 @@
          pointer-events: none;
        }
     */
-  </style>
-</head>
-<body>
-  <div class="sidebar">
-    <div class="logo">WILD HOUSE</div>
-    <div class="menu">
-      <a href="#">Browse</a>
-      <a href="#">Wishlist</a>
-      <a href="#">Coming Soon</a>
-    </div>
-  </div>
+  </style> -->
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="logo">
+          <img src="img/Component 19.png" alt="" />
+        </div>
+        <!------------------------------------------------ MENU ----------------------------------------->
+        <ul class="menu">
+          <li>
+            <i>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5 19.9V4.1C10.5 2.6 9.86 2 8.27 2H4.23C2.64 2 2 2.6 2 4.1V19.9C2 21.4 2.64 22 4.23 22H8.27C9.86 22 10.5 21.4 10.5 19.9Z"
+                  stroke="currentColor"
+                  class="filled"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 10.9V4.1C22 2.6 21.36 2 19.77 2H15.73C14.14 2 13.5 2.6 13.5 4.1V10.9C13.5 12.4 14.14 13 15.73 13H19.77C21.36 13 22 12.4 22 10.9Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 19.9V18.1C22 16.6 21.36 16 19.77 16H15.73C14.14 16 13.5 16.6 13.5 18.1V19.9C13.5 21.4 14.14 22 15.73 22H19.77C21.36 22 22 21.4 22 19.9Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </i>
+            <a href="#">Browser</a>
+          </li>
+          <li>
+            <i>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="filled"
+                  d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle></circle>
+              </svg>
+            </i>
+            <a href="#">WishList</a>
+          </li>
+          <li>
+            <i>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 2V5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 2V5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.5 9.08984H20.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="filled"
+                  d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.9955 13.7002H12.0045"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.29431 13.7002H8.30329"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.29431 16.7002H8.30329"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </i>
+            <a href="#">Coming Soon</a>
+          </li>
+        </ul>
+        <div class="new_trailer">
+          <h2>New Trailers 🔥</h2>
+          <div class="trailer_card">
+            <img src="/img/batman.png" alt="" />
+            <div class="trailer_bottom">
+              <i>
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.7045 3.67665C8.94465 3.80436 9.14552 3.995 9.2856 4.22815C9.42568 4.46129 9.49969 4.72816 9.49969 5.00015C9.49969 5.27215 9.42568 5.53901 9.2856 5.77216C9.14552 6.00531 8.94465 6.19595 8.7045 6.32365L2.2985 9.80715C1.267 10.3687 0 9.63865 0 8.48415V1.51665C0 0.361654 1.267 -0.367846 2.2985 0.192654L8.7045 3.67665Z"
+                    fill="#0D0F2A"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+          <div class="trailer_card">
+            <img src="/img/batman.png" alt="" />
+            <div class="trailer_bottom">
+              <i>
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.7045 3.67665C8.94465 3.80436 9.14552 3.995 9.2856 4.22815C9.42568 4.46129 9.49969 4.72816 9.49969 5.00015C9.49969 5.27215 9.42568 5.53901 9.2856 5.77216C9.14552 6.00531 8.94465 6.19595 8.7045 6.32365L2.2985 9.80715C1.267 10.3687 0 9.63865 0 8.48415V1.51665C0 0.361654 1.267 -0.367846 2.2985 0.192654L8.7045 3.67665Z"
+                    fill="#0D0F2A"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+          <div class="trailer_card">
+            <img src="/img/batman.png" alt="" />
+            <div class="trailer_bottom">
+              <i>
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.7045 3.67665C8.94465 3.80436 9.14552 3.995 9.2856 4.22815C9.42568 4.46129 9.49969 4.72816 9.49969 5.00015C9.49969 5.27215 9.42568 5.53901 9.2856 5.77216C9.14552 6.00531 8.94465 6.19595 8.7045 6.32365L2.2985 9.80715C1.267 10.3687 0 9.63865 0 8.48415V1.51665C0 0.361654 1.267 -0.367846 2.2985 0.192654L8.7045 3.67665Z"
+                    fill="#0D0F2A"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+      </aside>
 
-  <div class="main">
-    <div class="search-bar">
-      <input type="text" placeholder="Search..." />
-    </div>
+      <!-- ----------------- MAIN SECTION ---------------------- -->
 
-    <div class="banner" style="background-image: url('/img/banner\ prodigal\ son.png');"></div>
+      <section id="main-section">
+        <header>
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <i>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z"
+                  stroke="#A6A6A6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.9304 20.6888C19.4604 22.2888 20.6704 22.4488 21.6004 21.0488C22.4504 19.7688 21.8904 18.7188 20.3504 18.7188C19.2104 18.7088 18.5704 19.5988 18.9304 20.6888Z"
+                  stroke="#A6A6A6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </i>
+          </div>
+          <div class="left">
+            <div class="badge">
+              <i>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.02 2.91016C8.71003 2.91016 6.02003 5.60016 6.02003 8.91016V11.8002C6.02003 12.4102 5.76003 13.3402 5.45003 13.8602L4.30003 15.7702C3.59003 16.9502 4.08003 18.2602 5.38003 18.7002C9.69003 20.1402 14.34 20.1402 18.65 18.7002C19.86 18.3002 20.39 16.8702 19.73 15.7702L18.58 13.8602C18.28 13.3402 18.02 12.4102 18.02 11.8002V8.91016C18.02 5.61016 15.32 2.91016 12.02 2.91016Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M13.87 3.19994C13.56 3.10994 13.24 3.03994 12.91 2.99994C11.95 2.87994 11.03 2.94994 10.17 3.19994C10.46 2.45994 11.18 1.93994 12.02 1.93994C12.86 1.93994 13.58 2.45994 13.87 3.19994Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.02 19.0601C15.02 20.7101 13.67 22.0601 12.02 22.0601C11.2 22.0601 10.44 21.7201 9.90002 21.1801C9.36002 20.6401 9.02002 19.8801 9.02002 19.0601"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+              </i>
+            </div>
+            <div class="profile-card">
+              <img src="img/F1.png" alt="profile pic" width="100" />
+              <div class="content">
+                <h4>Upskill.co</h4>
+                <span>@Upskill</span>
+              </div>
+            </div>
+          </div>
+        </header>
 
-    <h2>Popcorn Mania</h2>
-    <div class="movie-row">
-      <div class="movie" style="background-image: url('/img/Spiderman.png');"></div>
-      <div class="movie" style="background-image: url('/img/john\ wick.png');"></div>
-      <div class="movie" style="background-image: url('/img/F1.png');"></div>
-    </div>
+        <section class="hero">
+          <div class="carousel-indicator">
+            <span class="active"></span><span></span><span></span>
+          </div>
+          <div class="carousel">
+            <div class="overlay">
+              <div class="left">
+                
+              </div>
+              <div class="right"></div>
+            </div>
+          </div>
+        </section>
 
-    <h2>Continue Watching</h2>
-    <div class="movie-row">
-      <div class="movie" style="background-image: url('c1.jpg');"></div>
-      <div class="movie" style="background-image: url('c2.jpg');"></div>
-      <div class="movie" style="background-image: url('c3.jpg');"></div>
-    </div>
+        <h2>Popcorn Mania</h2>
+        <div class="movie-row">
+          <div
+            class="movie"
+            style="background-image: url('/img/Spiderman.png')"
+          ></div>
+          <div
+            class="movie"
+            style="background-image: url('/img/john\ wick.png')"
+          ></div>
+          <div
+            class="movie"
+            style="background-image: url('/img/pennywise.jpg')"
+          ></div>
+        </div>
 
+        <h2>Continue Watching</h2>
+        <div class="movie-row">
+          <div class="movie" style="background-image: url('c1.jpg')"></div>
+          <div class="movie" style="background-image: url('c2.jpg')"></div>
+          <div class="movie" style="background-image: url('c3.jpg')"></div>
+        </div>
+      </section>
+    </main>
     <footer>
-      <div>© 2025 Wild House Streaming</div>
+      <div class="logo"></div>
       <div>
-        <a href="#">Help</a> ·
-        <a href="#">Privacy</a> ·
-        <a href="#">Terms</a>
+        <h3><a href="#">About Us</a></h3>
+        <br />
+        <a href="#">About</a><br />
+        <a href="#">Branding</a><br />
+        <a href="#">Newsroom</a><br />
+        <a href="#">Partnerships</a><br />
+        <a href="#">Affiliates</a><br />
+        <a href="#">Careers</a><br />
+        <h3><a href="#">Help and support</a></h3>
+        <a href="#"></a>
+        <a href="#">Help center</a>
+        <a href="#">Contact us</a>
+        <a href="#">Privacy & Terms</a>
+        <a href="#">Safety information</a>
+        <a href="#">Sitemap</a>
+        <p>Download on the <span>App Store</span></p>
+        <p>G</p>
       </div>
     </footer>
-  </div>
-</body>
+  </body>
 </html>
