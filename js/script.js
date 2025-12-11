@@ -1,56 +1,3 @@
-// const menu = document.querySelector('.navbar');
-// const menuItems = document.querySelectorAll('.navlink');
-// const hamburger = document.querySelector('.mobile-nav');
-// const closeIcon = document.querySelector('.closeIcon');
-// const menuIcon = document.querySelector('.menuIcon');
-
-// function toggleMenu() {
-//   if (menu.classList.contains('showMenu')) {
-//     menu.classList.remove('showMenu');
-//     closeIcon.style.display = 'none';
-//     menuIcon.style.display = 'block';
-//   } else {
-//     menu.classList.add('showMenu');
-//     closeIcon.style.display = 'block';
-//     menuIcon.style.display = 'none';
-//     menuItems.style.display = 'block';
-//   }
-// }
-
-// hamburger.addEventListener('click', toggleMenu);
-
-// menuItems.forEach(function (menuItem) {
-//   menuItem.addEventListener('click', toggleMenu);
-// });
-
-// // const btnNavEl = document.querySelector('.mobile-nav');
-// // const headerEl = document.querySelector('.header');
-
-// // btnNavEl.addEventListener('click', function () {
-// //   headerEl.classList.toggle('nav-open');
-// // });
-
-// // // smooth scrolling
-// // const allLinks = document.querySelectorAll('a:link');
-
-// // allLinks.forEach(function (link) {
-// //   link.addEventListener('click', function (e) {
-// //     e.preventDefault();
-// //     const href = link.getAttribute('href');
-
-// //     if (href === '#') {
-// //       window.scrollTo({ top: 0, behavior: 'smooth' });
-// //     }
-
-// //     if (href !== '#' && href.startsWith('#')) {
-// //       const sectionEl = document.querySelector(href);
-// //       sectionEl.scrollIntoView({ behavior: 'smooth' });
-// //     }
-
-// //     if (link.classList.contains('navlink'))
-// //       headerEl.classList.toggle('nav-open');
-// //   });
-// // });
 const btnNavEl = document.querySelector('.btn-mobile-nav');
 const headerEl = document.querySelector('.header');
 
@@ -108,3 +55,31 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const messages = [
+    { user: 'Tasha', text: 'OMG this scene is crazy 😂' },
+    { user: 'Liam', text: 'Sync is perfect on my end!' },
+    { user: 'Grace', text: 'Drop the next episode!' },
+    { user: 'Leo', text: 'Invite me to the room 😭' },
+    { user: 'Drew', text: 'This trailer looks clean 🔥' },
+  ];
+
+  let index = 0;
+
+  function addChatBubble() {
+    const chatList = document.getElementById('chat-list');
+    const bubble = document.createElement('div');
+    bubble.className = 'chat-bubble';
+    bubble.innerHTML = `<strong>${messages[index].user}</strong>: ${messages[index].text}`;
+    chatList.appendChild(bubble);
+    chatList.scrollTop = chatList.scrollHeight;
+    index = (index + 1) % messages.length;
+  }
+
+  setInterval(addChatBubble, 1800);
+
+  // Load initial messages
+  addChatBubble();
+  addChatBubble();
+});
