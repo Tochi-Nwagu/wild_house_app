@@ -1,0 +1,279 @@
+/* Below 1344px smaller laptops */
+@media (max-width: 1344px) {
+  .header {
+    width: 90%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 0;
+    height: auto;
+  }
+
+  .watch-box,
+  .mockup,
+  .watch-text,
+  .sync-text {
+    width: 90%;
+  }
+}
+/* below 1200px landscape tablet */
+@media (max-width: 1200px) {
+  /* .grid-col-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  } */
+}
+/* Tablets less than 944px */
+@media (max-width: 944px) {
+  .subheading {
+    font-size: 36px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .hero-left,
+  .hero-right {
+    width: 50%;
+    padding: 40px 0;
+  }
+  .container {
+    height: auto;
+    margin: 0 auto;
+    padding-left: 40px;
+  }
+  .grid-col-2 {
+    gap: 60px;
+  }
+  .watch-text,
+  .sync-text {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .watch-text {
+    margin-top: 40px;
+  }
+
+  .watch-text-box > .btn-tag {
+    margin-bottom: 20px;
+  }
+
+  .watch-text,
+  .sync-text,
+  .how-text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 100px;
+  }
+  .watch-box,
+  .sync-box {
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+  .cta {
+    width: 98%;
+  }
+  .cta-intro {
+    font-size: 28px;
+  }
+  .mockup {
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+  .sync-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .copyright {
+    margin-top: 0;
+  }
+  .social-icon {
+    width: 16px;
+    height: 16px;
+    gap: 10px;
+  }
+  /* .nav-cta {
+    margin-top: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+  } */
+}
+
+/* Tablets below 784px */
+@media (max-width: 784px) {
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .container {
+    padding-left: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .feat {
+    width: 75%;
+  }
+  .mockup {
+    padding-left: 20px;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .header {
+    width: 100%;
+  }
+  .main-nav {
+    background-color: #48627e;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+
+    /* Slide in horizontally */
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.5s ease-in;
+    margin-top: 0;
+
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    visibility: hidden;
+  }
+
+  .nav-cta {
+    margin-top: 450px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+  }
+  .nav-open .main-nav {
+    opacity: 4;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .main-navlink:link,
+  .main-navlink:visited {
+    font-size: 48px;
+  }
+
+  .icon-mobile-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .watch-text,
+  .sync-text,
+  .how-text {
+    font-size: 24px;
+  }
+
+  .watch-box,
+  .sync-box,
+  .how {
+    margin-bottom: 80px;
+  }
+
+  .subheading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col {
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 32px;
+  }
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}
+/* mobile device 544px */
+@media (max-width: 544px) {
+  .subheading {
+    font-size: 26px;
+    line-height: 1.2;
+    width: 100%;
+  }
+  .hero {
+    padding: 10px;
+    gap: 15px;
+  }
+  .mockup {
+    padding-left: 0;
+  }
+  .watch-text,
+  .sync-text,
+  .how-text {
+    font-size: 14px;
+  }
+
+  .main-navlink:link,
+  .main-navlink:visited {
+    font-size: 24px;
+  }
+  .cta-btn-group {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
