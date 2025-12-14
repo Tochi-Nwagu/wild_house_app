@@ -182,10 +182,13 @@
 .hero-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  max-width: 40rem;
+  /* object-fit: cover; */
+  align-items: left;
+  left: 0%;
 }
 
-.chat-overlay {
+/* .chat-overlay {
   position: absolute;
   right: 0;
   top: 0;
@@ -198,7 +201,7 @@
   overflow-y: auto;
   padding: 16px;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
+  color: white; */
 
   /* backdrop-filter: blur(12px) brightness(0.8);
   border-radius: 16px;
@@ -336,6 +339,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
 }
 
 .header {
@@ -377,10 +381,17 @@
   align-items: center;
 }
 .nav-cta {
-  padding: 10px 8px;
-  background-color: #1ed760;
-  border-radius: 8px;
+  background: #18e06f;
+  color: #071727;
+  padding: 16px 26px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  width: auto;
   text-decoration: none;
+  display: inline-block;
 }
 
 .btn-mobile-nav {
@@ -422,7 +433,9 @@
 #how-to {
   position: relative;
   overflow: hidden;
+  padding: 0 60px;  
 }
+
 /* Watermark */
 #watch::before,
 #how-to::before {
@@ -493,10 +506,20 @@
 }
 .cta-btn-primary,
 .cta-btn-secondary {
-  background-color: #1ed760;
-  padding: 16px 24px;
+  background: #18e06f;
+  color: #071727;
+  padding: 16px 26px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
   border: none;
-  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+}
+.cta-btn-primary:hover{
+
 }
 
 .cta-btn-secondary {
