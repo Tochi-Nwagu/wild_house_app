@@ -1,0 +1,139 @@
+/* FEATURE SECTION STYLE*/
+.feat{
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0% auto;
+    top: 848.41px;
+    background: #0d0f2a;
+}
+
+.host {
+    padding-top: 5px;
+    height: 50px;
+    top: 848.41px;
+    left: 80px;
+    margin-bottom: 0%;
+    opacity: 1;
+}
+   
+/*Logos styles*/
+.logos{ 
+    display: flex;
+    height: 94px;
+    top: 914.41px;
+    opacity: 1;
+    margin-bottom: 3px;
+    justify-content: space-between;   
+}
+
+.netflix{
+    height: 40px;
+    top: 25px;
+    opacity: 1;
+    margin: 18px;
+}
+
+.youtube{
+    width: 200px;
+    height: 50px;
+    top: 27px;
+    left: 248px;
+    opacity: 1;
+    margin: 20px;
+}
+
+.disney{
+    width: 130px;
+    height: 93px;
+    left: 560px;
+    opacity: 1;
+    border-radius: 28.92px;
+}
+
+.hbo{
+    width: 95px;
+    height: 60px;
+    opacity: 1;
+    margin: 15px;
+}
+
+.spotify{
+    width: 180px;
+    height: 40px;
+    margin: 20px;
+    top: 27px;
+    left: 953px;
+    opacity: 1;
+    gap: 16px;
+}
+
+/*END OF FEATURE SECTION STYLING*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0f2a;
+  color: #ffffff;
+  font-family: 'Satoshi', sans-serif;
+  max-width: 100%;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 585px;
+  padding-left: 80px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  /* margin-bottom: 60px; */
+}
+
+.subheading {
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: -3%;
+}
+
+.sub {
+  width: 736px;
+  height: 113px;
+  padding-left: 15px;
+}
+
+.btn-tag {
+  background-color: #0d0f2a;
+  box-shadow: inset 0px 4px 6.3px 0px rgba(255, 255, 255, 0.35),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.fullstop {
+  color: #1ed760;
+  font-size: 56px;
+}
+
+/* .cta {
+  width: 173px;
+  height: 56px;
+  background-color: #1ed760;
+  border-radius: 8px;
+  font-size: 16px;
+} */
