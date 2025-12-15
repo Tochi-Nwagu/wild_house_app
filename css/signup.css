@@ -17,6 +17,12 @@ body {
   line-height: 1;
   letter-spacing: -3%;
 }
+.form{
+  background-color: #2d94c4;
+  padding: 100px 200px;
+  border-radius: 20px;
+}
+
 a {
   color: #1ed760;
   text-decoration: none;
@@ -114,9 +120,7 @@ input[type='submit'] {
   transition: background 0.3s;
 }
 
-input[type='submit']:hover {
-  background: #16b34a;
-}
+
 
 /* ===== FORGOT PASSWORD & SIGNUP LINKS ===== */
 .forgot-password {
@@ -134,6 +138,13 @@ input[type='submit']:hover {
   font-size: 0.9rem;
 }
 
+.terms:hover, 
+input[type='submit']:hover,
+.login-account:hover {
+  background: #18e06f;
+  background-color: rgba(30, 215, 95, 0.4);
+  color:#fff;
+}
 /* ===== BOTTOM IMAGE ===== */
 .login-baseimg,
 .bottom-img img {
