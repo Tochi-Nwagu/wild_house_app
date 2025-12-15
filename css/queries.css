@@ -38,6 +38,8 @@
   .hero-right {
     width: 50%;
     padding: 40px 0;
+    grid-column: auto;
+    flex-wrap: wrap;
   }
   .container {
     height: auto;
